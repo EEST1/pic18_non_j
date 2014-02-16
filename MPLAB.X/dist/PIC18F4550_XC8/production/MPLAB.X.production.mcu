@@ -1,0 +1,35 @@
+
+Memory Class Usage:
+
+Program space:
+    CODE                 used  1534h (  5428) of  1FF8h bytes   ( 66.3%)
+    CONST                used     0h (     0) of  1FF8h bytes   (  0.0%)
+    SMALLCONST           used    BEh (   190) of  1804h bytes   (  3.1%)
+    MEDIUMCONST          used     0h (     0) of  1804h bytes   (  0.0%)
+
+Data space:
+    COMRAM               used    58h (    88) of    5Fh bytes   ( 92.6%)
+    ABS1                 used    ACh (   172) of   800h bytes   (  8.4%)
+    BIGRAM               used     0h (     0) of   7FFh bytes   (  0.0%)
+    RAM                  used     0h (     0) of   7A0h bytes   (  0.0%)
+    BANK0                used    82h (   130) of    A0h bytes   ( 81.3%)
+    BANK1                used    40h (    64) of   100h bytes   ( 25.0%)
+    BANK2                used     0h (     0) of   100h bytes   (  0.0%)
+    BANK3                used     0h (     0) of   100h bytes   (  0.0%)
+    BANK4                used     0h (     0) of   100h bytes   (  0.0%)
+    BANK5                used     0h (     0) of   100h bytes   (  0.0%)
+    BANK6                used     0h (     0) of   100h bytes   (  0.0%)
+    BANK7                used     0h (     0) of   100h bytes   (  0.0%)
+
+Configuration bits:
+    CONFIG               used     Eh (    14) of     Eh bytes   (100.0%)
+
+EEPROM space:
+    EEDATA               used     0h (     0) of   100h bytes   (  0.0%)
+
+ID Location space:
+    IDLOC                used     8h (     8) of     8h bytes   (100.0%)
+
+Data stack space:
+    STACK                used     0h (     0) of   354h bytes   (  0.0%)
+

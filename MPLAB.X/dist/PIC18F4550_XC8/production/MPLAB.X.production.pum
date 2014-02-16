@@ -1,0 +1,70 @@
+
+Psect Usage Map:
+
+ Psect      | Contents                   | Memory Range      | Size
+------------|----------------------------|-------------------|--------------
+ end_init   | Initialization code        | 000000h - 000003h |    4 bytes  
+ LoVector   |                            | 000000h - 00001Fh |   32 bytes  
+ HiVector   |                            | 000000h - 00000Bh |   12 bytes  
+ text41     | Program and library code   | 000004h - 000007h |    4 bytes  
+ text27     | Program and library code   | 00000Ch - 000017h |   12 bytes  
+ _BootMain_ |                            | 000030h - 00004Fh |   32 bytes  
+ text2      | Program and library code   | 0008BEh - 000E83h | 1478 bytes  
+ text24     | Program and library code   | 000E84h - 000F99h |  278 bytes  
+ text3      | Program and library code   | 000F9Ah - 0010A1h |  264 bytes  
+ text19     | Program and library code   | 0010A2h - 001199h |  248 bytes  
+ text6      | Program and library code   | 00119Ah - 001287h |  238 bytes  
+ text12     | Program and library code   | 001288h - 001371h |  234 bytes  
+ text13     | Program and library code   | 001372h - 00143Fh |  206 bytes  
+ text15     | Program and library code   | 001440h - 001503h |  196 bytes  
+ text17     | Program and library code   | 001504h - 0015C7h |  196 bytes  
+ text23     | Program and library code   | 0015C8h - 001689h |  194 bytes  
+ text16     | Program and library code   | 00168Ah - 001731h |  168 bytes  
+ text29     | Program and library code   | 001732h - 0017CDh |  156 bytes  
+ text28     | Program and library code   | 0017CEh - 001857h |  138 bytes  
+ text5      | Program and library code   | 001858h - 0018D3h |  124 bytes  
+ text34     | Program and library code   | 0018D4h - 00194Bh |  120 bytes  
+ text4      | Program and library code   | 00194Ch - 0019B5h |  106 bytes  
+ text14     | Program and library code   | 0019B6h - 001A1Dh |  104 bytes  
+ text11     | Program and library code   | 001A1Eh - 001A81h |  100 bytes  
+ text0      | Program and library code   | 001A82h - 001ADFh |   94 bytes  
+ text38     | Program and library code   | 001AE0h - 001B3Bh |   92 bytes  
+ text37     | Program and library code   | 001B3Ch - 001B8Fh |   84 bytes  
+ text22     | Program and library code   | 001B90h - 001BDFh |   80 bytes  
+ text42     | Program and library code   | 001BE0h - 001C19h |   58 bytes  
+ cinit      |                            | 001C1Ah - 001C47h |   46 bytes  
+ text25     | Program and library code   | 001C48h - 001C75h |   46 bytes  
+ text33     | Program and library code   | 001C76h - 001CA1h |   44 bytes  
+ text36     | Program and library code   | 001CA2h - 001CC3h |   34 bytes  
+ text9      | Program and library code   | 001CC4h - 001CDFh |   28 bytes  
+ text39     | Program and library code   | 001CE0h - 001CFBh |   28 bytes  
+ text40     | Program and library code   | 001CFCh - 001D11h |   22 bytes  
+ text31     | Program and library code   | 001D12h - 001D25h |   20 bytes  
+ text35     | Program and library code   | 001D26h - 001D39h |   20 bytes  
+ text7      | Program and library code   | 001D3Ah - 001D4Bh |   18 bytes  
+ text8      | Program and library code   | 001D4Ch - 001D59h |   14 bytes  
+ text10     | Program and library code   | 001D5Ah - 001D67h |   14 bytes  
+ text30     | Program and library code   | 001D68h - 001D75h |   14 bytes  
+ text32     | Program and library code   | 001D76h - 001D83h |   14 bytes  
+ text18     | Program and library code   | 001D84h - 001D89h |    6 bytes  
+ text20     | Program and library code   | 001D8Ah - 001D8Bh |    2 bytes  
+ text21     | Program and library code   | 001D8Ch - 001D8Dh |    2 bytes  
+ text26     | Program and library code   | 001D8Eh - 001D8Fh |    2 bytes  
+ _FlashSign |                            | 002006h - 002007h |    2 bytes  
+            |                            |                   |              
+ smallconst |                            | 000800h - 0008BDh |  190 bytes  
+------------|----------------------------|-------------------|--------------
+ bssCOMRAM  |                            | 000001h - 000049h |   73 bytes  
+ cstackCOMR |                            | 00004Ah - 000058h |   15 bytes  
+            |                            |                   |              
+ abs_s1     |                            | 000400h - 0004ABh |  172 bytes  
+            |                            |                   |              
+ bssBANK0   |                            | 000060h - 0000E1h |  130 bytes  
+            |                            |                   |              
+ bssBANK1   |                            | 000100h - 00013Fh |   64 bytes  
+------------|----------------------------|-------------------|--------------
+ config     | Device configuration words | 300000h - 30000Dh |   14 bytes  
+------------|----------------------------|-------------------|--------------
+ idloc      | User ID registers          | 200000h - 200007h |    8 bytes  
+------------|----------------------------|-------------------|--------------
+

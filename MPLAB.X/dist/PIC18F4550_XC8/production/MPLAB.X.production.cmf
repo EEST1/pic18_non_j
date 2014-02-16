@@ -1,0 +1,1432 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Windows\Temp\s290.obj
+end_init CODE 0 0 0 4 1
+idloc IDLOC 0 200000 200000 8 1
+config CONFIG 0 300000 300000 E 1
+$dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+smallconst SMALLCONST 0 800 800 BE 1
+text42 CODE 0 1BE0 1BE0 3A 1
+text41 CODE 0 4 4 4 1
+text40 CODE 0 1CFC 1CFC 16 1
+text39 CODE 0 1CE0 1CE0 1C 1
+text38 CODE 0 1AE0 1AE0 5C 1
+text37 CODE 0 1B3C 1B3C 54 1
+text36 CODE 0 1CA2 1CA2 22 1
+text35 CODE 0 1D26 1D26 14 1
+text34 CODE 0 18D4 18D4 78 1
+text33 CODE 0 1C76 1C76 2C 1
+text32 CODE 0 1D76 1D76 E 1
+text31 CODE 0 1D12 1D12 14 1
+text30 CODE 0 1D68 1D68 E 1
+text29 CODE 0 1732 1732 9C 1
+text28 CODE 0 17CE 17CE 8A 1
+text27 CODE 0 C C C 1
+text26 CODE 0 1D8E 1D8E 2 1
+text25 CODE 0 1C48 1C48 2E 1
+text24 CODE 0 E84 E84 116 1
+text23 CODE 0 15C8 15C8 C2 1
+text22 CODE 0 1B90 1B90 50 1
+text21 CODE 0 1D8C 1D8C 2 1
+text20 CODE 0 1D8A 1D8A 2 1
+text19 CODE 0 10A2 10A2 F8 1
+text18 CODE 0 1D84 1D84 6 1
+text17 CODE 0 1504 1504 C4 1
+text16 CODE 0 168A 168A A8 1
+text15 CODE 0 1440 1440 C4 1
+text14 CODE 0 19B6 19B6 68 1
+text13 CODE 0 1372 1372 CE 1
+text12 CODE 0 1288 1288 EA 1
+text11 CODE 0 1A1E 1A1E 64 1
+text10 CODE 0 1D5A 1D5A E 1
+text9 CODE 0 1CC4 1CC4 1C 1
+text8 CODE 0 1D4C 1D4C E 1
+text7 CODE 0 1D3A 1D3A 12 1
+text6 CODE 0 119A 119A EE 1
+text5 CODE 0 1858 1858 7C 1
+text4 CODE 0 194C 194C 6A 1
+text3 CODE 0 F9A F9A 108 1
+text2 CODE 0 8BE 8BE 5C6 1
+_BootMain_text CODE 0 30 30 20 1
+text0 CODE 0 1A82 1A82 5E 1
+cstackCOMRAM COMRAM 1 4A 4A F 1
+bssBANK1 BANK1 1 100 100 40 1
+bssBANK0 BANK0 1 60 60 82 1
+bssCOMRAM COMRAM 1 1 1 49 1
+cinit CODE 0 1C1A 1C1A 2E 1
+_FlashSignatureWord_const CODE 0 2006 2006 2 1
+$build/PIC18F4550_XC8/production/_ext/1360937237/VectorRemap.obj
+LoVector CODE 0 0 0 20 1
+HiVector CODE 0 0 0 C 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+BANK0 0000E2-0000FF 1
+BANK1 000140-0001FF 1
+BANK2 000200-0002FF 1
+BANK3 000300-0003FF 1
+BANK4 0004AC-0004FF 1
+BANK5 000500-0005FF 1
+BANK6 000600-0006FF 1
+BANK7 000700-0007FF 1
+BIGRAM 000059-00005F 1
+BIGRAM 0000E2-0000FF 1
+BIGRAM 000140-0003FF 1
+BIGRAM 0004AC-0007FF 1
+CODE 000020-00002F 1
+CODE 000050-0007FF 1
+CODE 001D90-001FFF 1
+CODE 002016-002017 1
+COMRAM 000059-00005F 1
+CONST 000020-00002F 1
+CONST 000050-0007FF 1
+CONST 001D90-001FFF 1
+CONST 002016-002017 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST 001D90-001FFF 1
+MEDIUMCONST 002016-002017 1
+RAM 0000E2-0000FF 1
+RAM 000140-0003FF 1
+RAM 0004AC-0007FF 1
+SFR 000F60-000FFF 1
+SMALLCONST 001D90-001FFF 1
+SMALLCONST 002016-002017 1
+STACK 0004AC-0007FF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <file name>:<line number> <address> <psect name> <class name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/PIC18F4550_XC8/production/_ext/1360937237/VectorRemap.obj
+"D:\Dropbox\MPLABx\pic18_non_j/src/VectorRemap.asm":33 0 HiVector CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/VectorRemap.asm":42 0 LoVector CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/VectorRemap.asm":34 8 HiVector CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/VectorRemap.asm":43 18 LoVector CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/VectorRemap.asm":44 1C LoVector CODE
+$dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1643 4 text41 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1645 4 text41 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1646 6 text41 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":708 C text27 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":710 C text27 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":711 10 text27 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":712 12 text27 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":713 14 text27 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":714 16 text27 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":508 30 _BootMain_text CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":525 30 _BootMain_text CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":539 34 _BootMain_text CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":548 38 _BootMain_text CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":551 3C _BootMain_text CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":553 3C _BootMain_text CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":558 3E _BootMain_text CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":560 42 _BootMain_text CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":562 46 _BootMain_text CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":566 4A _BootMain_text CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":569 50 _BootMain_text CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":359 8BE text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":367 8BE text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":377 8C8 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":381 8CC text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":385 8D2 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":386 8EA text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":389 8F2 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":390 8FC text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":389 914 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":399 91E text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":402 91E text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":405 924 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":406 930 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":407 93C text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":408 948 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":409 954 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":410 96E text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":411 988 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":412 994 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":413 9AE text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":414 9C8 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":415 9D4 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":416 9EE text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":417 A08 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":419 A0E text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":420 A1A text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":421 A34 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":422 A4E text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":424 A54 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":428 A60 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":433 A7A text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":434 A82 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":436 A8A text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":437 A92 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":442 A94 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":444 AA8 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":446 AAC text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":447 AB0 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":448 AC8 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":452 AD0 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":453 AD4 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":454 ADA text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":442 ADE text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":459 AE4 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":461 AEC text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":462 AF0 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":463 AF2 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":464 AF6 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":465 AFA text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":466 B00 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":471 B04 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":472 B08 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":473 B0C text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":474 B10 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":475 B14 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":481 B1C text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":483 B28 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":485 B2C text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":487 B30 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":493 B32 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":495 B3E text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":501 B44 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":502 B56 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":504 B66 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":506 B90 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":508 B9A text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":509 BEA text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":510 BEC text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":511 BFC text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":513 C02 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":506 C06 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":520 C14 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":523 C16 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":524 C1A text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":529 C24 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":530 C30 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":531 C40 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":533 C44 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":534 C54 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":536 C5E text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":539 C6A text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":540 C74 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":541 C78 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":542 C7A text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":544 CB6 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":547 CB8 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":534 D0E text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":553 D1C text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":555 D22 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":560 D3C text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":569 D42 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":570 D4E text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":571 D5C text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":572 D74 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":573 D8E text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":574 D9C text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":575 DB6 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":576 DBC text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":577 DC2 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":578 DC8 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":579 DCE text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":580 DDA text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":581 DE0 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":582 DE6 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":583 DF2 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":584 DF8 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":585 DFE text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":586 E04 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":587 E0A text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":588 E10 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":591 E16 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":593 E1C text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":598 E36 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":602 E3A text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":603 E42 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":397 E44 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":606 E82 text2 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":618 E84 text24 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":625 E84 text24 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":626 E90 text24 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":628 E9A text24 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":626 ECC text24 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":632 ED4 text24 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":633 EE0 text24 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":637 EEC text24 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":638 EF0 text24 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":639 EF4 text24 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":641 EF8 text24 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":642 EFC text24 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":650 F02 text24 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":652 F0E text24 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":656 F16 text24 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":657 F3A text24 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":658 F48 text24 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":662 F4C text24 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":666 F64 text24 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":673 F66 text24 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":676 F72 text24 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":677 F76 text24 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":678 F7A text24 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":681 F80 text24 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":684 F8C text24 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":691 F8E text24 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":694 F94 text24 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":696 F98 text24 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":721 F9A text3 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":730 F9A text3 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":731 FDA text3 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":732 FDE text3 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":733 FEC text3 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":738 FF0 text3 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":754 FF8 text3 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":755 FFE text3 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":766 1002 text3 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":767 100C text3 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":768 100C text3 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":770 1010 text3 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":772 1016 text3 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":775 102E text3 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":781 1030 text3 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":782 1032 text3 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":783 1034 text3 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":784 1036 text3 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":786 1036 text3 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":789 1038 text3 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":798 103C text3 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":800 103C text3 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":803 103E text3 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":808 1040 text3 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":766 1042 text3 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":809 1042 text3 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":815 104A text3 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":821 104C text3 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":822 1050 text3 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":826 1056 text3 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":828 1060 text3 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":826 1096 text3 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":830 109E text3 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":826 10A0 text3 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":830 10A2 text3 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":73 10A2 text19 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":75 10A2 text19 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":76 10AE text19 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":83 10B4 text19 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":88 10BE text19 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":89 10C6 text19 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":90 10CE text19 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":93 10D6 text19 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":94 10DE text19 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":95 10EC text19 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":85 10FC text19 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":100 110C text19 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":101 110C text19 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":104 110E text19 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":108 111E text19 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":109 1122 text19 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":111 1124 text19 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":112 1128 text19 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":114 112A text19 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":115 1132 text19 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":120 113A text19 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":122 1142 text19 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":123 1146 text19 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":125 1148 text19 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":126 1150 text19 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":127 1158 text19 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":128 115A text19 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":129 1162 text19 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":131 1164 text19 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":133 116C text19 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":134 1170 text19 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":105 1172 text19 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":137 1198 text19 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":464 119A text6 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":470 119A text6 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":475 119E text6 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":481 11A4 text6 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":486 11AA text6 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":494 11AE text6 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":499 11B4 text6 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":516 11BA text6 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":521 11C2 text6 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":522 11CC text6 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":523 11CC text6 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":526 11D0 text6 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":527 11D4 text6 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":530 11E0 text6 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":533 11E4 text6 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":538 11F0 text6 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":542 11FC text6 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":545 11FE text6 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":549 1212 text6 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":551 121C text6 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":549 125E text6 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":556 1266 text6 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":557 126A text6 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":564 126C text6 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":567 1274 text6 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":568 1276 text6 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":569 127A text6 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":570 127C text6 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":576 127C text6 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":521 127E text6 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":585 1286 text6 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1170 1288 text12 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1174 1288 text12 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1179 128C text12 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1180 1294 text12 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1181 129A text12 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1182 12A2 text12 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1184 12A8 text12 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1185 12AE text12 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1189 12B4 text12 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1190 12BA text12 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1193 12C4 text12 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1195 12C4 text12 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1220 12C8 text12 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1225 12D0 text12 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1226 12DC text12 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1230 12E4 text12 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1234 12E8 text12 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1235 12F0 text12 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1236 12F6 text12 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1241 12FC text12 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1257 1312 text12 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1262 131A text12 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1264 1322 text12 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1266 132A text12 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1269 1332 text12 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1271 1338 text12 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1272 133E text12 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1276 1344 text12 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1277 134A text12 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1282 1352 text12 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1285 135A text12 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1286 1362 text12 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1287 136A text12 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1297 1370 text12 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1317 1372 text13 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1319 1372 text13 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1324 1380 text13 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1325 1388 text13 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1329 1390 text13 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1330 1394 text13 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1332 1396 text13 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1333 139A text13 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1335 139C text13 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1336 13A4 text13 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1339 13AE text13 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1340 13B0 text13 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1342 13B2 text13 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1343 13B6 text13 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1346 13B8 text13 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1347 13BC text13 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1349 13BE text13 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1350 13C6 text13 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1351 13D6 text13 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1352 13D8 text13 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1355 13E0 text13 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1356 13E8 text13 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1357 13FC text13 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1321 13FE text13 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1364 143E text13 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1481 1440 text15 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1483 1440 text15 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1484 1448 text15 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1486 1450 text15 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1489 1452 text15 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1497 145A text15 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1498 145E text15 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1501 1466 text15 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1502 146E text15 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1504 1470 text15 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1508 1478 text15 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1509 14B6 text15 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1510 14C6 text15 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1486 14D0 text15 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1514 14E6 text15 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1516 14EC text15 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1517 14F8 text15 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1518 14FA text15 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1520 1502 text15 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1539 1504 text17 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1542 1504 text17 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1544 1514 text17 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1545 151C text17 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1546 1524 text17 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1547 1528 text17 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1548 1528 text17 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1549 152A text17 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1552 152A text17 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1554 1542 text17 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1556 154A text17 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1558 1588 text17 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1560 1590 text17 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1563 159C text17 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1565 159C text17 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1566 15A0 text17 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1569 15AE text17 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1570 15BA text17 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1574 15C6 text17 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1086 15C8 text23 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1093 15C8 text23 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1094 15D0 text23 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1098 15DC text23 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1099 15E0 text23 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1101 15E4 text23 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1103 15EA text23 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1105 15F0 text23 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1110 15F8 text23 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1113 15FC text23 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1118 1604 text23 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1119 1610 text23 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1123 1616 text23 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1124 1640 text23 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1125 1644 text23 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1126 1648 text23 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1121 164A text23 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1133 1650 text23 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1134 167A text23 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1135 167E text23 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1136 1682 text23 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1131 1684 text23 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1140 1688 text23 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1384 168A text16 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1386 168A text16 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1391 1694 text16 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1392 169C text16 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1393 16A4 text16 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1394 16AC text16 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1395 16AE text16 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1397 16AE text16 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1399 16B2 text16 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1400 16BA text16 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1401 16C2 text16 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1405 16CC text16 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1406 16D4 text16 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1407 16F0 text16 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1408 1718 text16 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1388 171A text16 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1409 172E text16 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1411 172E text16 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1413 1730 text16 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":284 1732 text29 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":286 1732 text29 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":288 173A text29 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":294 1740 text29 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":295 174A text29 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":300 174E text29 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":301 1758 text29 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":300 1780 text29 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":306 178A text29 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":307 1792 text29 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":312 17CC text29 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":229 17CE text28 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":237 17CE text28 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":238 17D4 text28 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":243 17DC text28 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":244 17E6 text28 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":243 180E text28 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":246 1818 text28 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":247 181C text28 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":249 1856 text28 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":833 1858 text5 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":838 1858 text5 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":839 185C text5 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":840 186C text5 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":845 1870 text5 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":847 187A text5 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":850 18B6 text5 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":856 18B8 text5 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":857 18BC text5 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":861 18C2 text5 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":845 18C4 text5 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":867 18D0 text5 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":845 18D2 text5 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":867 18D4 text5 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":745 18D4 text34 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":747 18D4 text34 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":748 18DC text34 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":749 18E0 text34 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":750 18E4 text34 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":751 18E8 text34 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":752 18EC text34 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":753 1908 text34 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":754 190C text34 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":755 190E text34 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":757 1910 text34 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":758 1912 text34 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":755 1916 text34 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":760 191A text34 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":761 191C text34 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":764 191E text34 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":765 1926 text34 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":766 192C text34 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":767 1934 text34 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":768 193C text34 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":769 1944 text34 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":771 194A text34 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":870 194C text4 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":874 194C text4 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":876 1956 text4 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":877 1960 text4 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":879 199C text4 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":880 19A0 text4 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":874 19A6 text4 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":883 19B2 text4 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":874 19B4 text4 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":883 19B6 text4 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1432 19B6 text14 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1436 19B6 text14 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1438 19BE text14 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1440 19DA text14 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1442 19E8 text14 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1440 19FC text14 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1446 1A00 text14 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1453 1A04 text14 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1455 1A0A text14 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1457 1A0E text14 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1461 1A14 text14 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1463 1A1C text14 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":813 1A1E text11 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":820 1A1E text11 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":821 1A26 text11 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":826 1A2E text11 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":828 1A34 text11 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":829 1A3C text11 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":831 1A44 text11 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":833 1A4A text11 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":834 1A52 text11 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":836 1A5A text11 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":837 1A62 text11 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":838 1A6A text11 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":839 1A72 text11 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":845 1A74 text11 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":846 1A78 text11 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":849 1A7C text11 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":851 1A80 text11 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":423 1A82 text0 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":431 1A82 text0 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":435 1A88 text0 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":440 1A8C text0 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":444 1A90 text0 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":449 1A92 text0 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":455 1A96 text0 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":462 1AB8 text0 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":467 1AD4 text0 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":479 1AD8 text0 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":481 1ADC text0 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1584 1AE0 text38 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1592 1AE4 text38 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1593 1AEC text38 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1594 1AF8 text38 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1596 1AFC text38 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1597 1B08 text38 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1601 1B10 text38 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1605 1B18 text38 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1608 1B30 text38 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1609 1B3A text38 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":171 1B3C text37 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":173 1B3C text37 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":175 1B44 text37 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":178 1B48 text37 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":179 1B50 text37 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":180 1B64 text37 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":181 1B6C text37 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":194 1B72 text37 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":195 1B86 text37 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":197 1B8E text37 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1016 1B90 text22 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1021 1B90 text22 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1023 1B98 text22 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1024 1B9C text22 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1025 1BA2 text22 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1027 1BA8 text22 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1032 1BB0 text22 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1036 1BB6 text22 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1039 1BBA text22 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1043 1BC2 text22 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1046 1BC6 text22 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1049 1BC6 text22 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1050 1BCC text22 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1052 1BD0 text22 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1054 1BD8 text22 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1064 1BDE text22 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":681 1BE0 text42 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":686 1BE0 text42 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":687 1BE6 text42 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":689 1BEE text42 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":690 1BF6 text42 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":692 1BFE text42 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":693 1C00 text42 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":696 1C02 text42 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":700 1C18 text42 CODE
+"C:\Windows\Temp\s290.":2335 1C1A cinit CODE
+"C:\Windows\Temp\s290.":2337 1C1A cinit CODE
+"C:\Windows\Temp\s290.":2340 1C1A cinit CODE
+"C:\Windows\Temp\s290.":2477 1C1A cinit CODE
+"C:\Windows\Temp\s290.":2478 1C1E cinit CODE
+"C:\Windows\Temp\s290.":2479 1C20 cinit CODE
+"C:\Windows\Temp\s290.":2480 1C20 cinit CODE
+"C:\Windows\Temp\s290.":2481 1C22 cinit CODE
+"C:\Windows\Temp\s290.":2482 1C24 cinit CODE
+"C:\Windows\Temp\s290.":2485 1C26 cinit CODE
+"C:\Windows\Temp\s290.":2486 1C2A cinit CODE
+"C:\Windows\Temp\s290.":2487 1C2C cinit CODE
+"C:\Windows\Temp\s290.":2488 1C2C cinit CODE
+"C:\Windows\Temp\s290.":2489 1C2E cinit CODE
+"C:\Windows\Temp\s290.":2490 1C30 cinit CODE
+"C:\Windows\Temp\s290.":2493 1C32 cinit CODE
+"C:\Windows\Temp\s290.":2494 1C36 cinit CODE
+"C:\Windows\Temp\s290.":2495 1C38 cinit CODE
+"C:\Windows\Temp\s290.":2496 1C38 cinit CODE
+"C:\Windows\Temp\s290.":2497 1C3A cinit CODE
+"C:\Windows\Temp\s290.":2498 1C3C cinit CODE
+"C:\Windows\Temp\s290.":2504 1C3E cinit CODE
+"C:\Windows\Temp\s290.":2505 1C3E cinit CODE
+"C:\Windows\Temp\s290.":2506 1C3E cinit CODE
+"C:\Windows\Temp\s290.":2507 1C40 cinit CODE
+"C:\Windows\Temp\s290.":2508 1C42 cinit CODE
+"C:\Windows\Temp\s290.":2509 1C44 cinit CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":892 1C48 text25 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":894 1C4C text25 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":897 1C4E text25 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":901 1C52 text25 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":910 1C5A text25 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":911 1C5E text25 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":913 1C5E text25 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":915 1C62 text25 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":919 1C64 text25 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":920 1C68 text25 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":921 1C6C text25 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":933 1C6E text25 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":934 1C72 text25 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":935 1C74 text25 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":346 1C76 text33 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":353 1C76 text33 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":355 1C7A text33 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":358 1C7E text33 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":359 1C82 text33 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":360 1C86 text33 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":361 1C8A text33 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":363 1C8C text33 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":364 1C90 text33 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":365 1C98 text33 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":366 1CA0 text33 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":333 1CA2 text36 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":336 1CA2 text36 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":337 1CAA text36 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":338 1CB2 text36 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":339 1CBA text36 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/BootPIC18NonJ.c":340 1CC2 text36 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":610 1CC4 text9 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":647 1CC4 text9 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":648 1CC8 text9 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":652 1CCC text9 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":653 1CCE text9 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":660 1CD0 text9 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":664 1CD2 text9 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":673 1CD4 text9 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":680 1CD8 text9 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":681 1CDA text9 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":685 1CDE text9 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1616 1CE0 text39 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1618 1CE0 text39 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1619 1CE2 text39 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1620 1CE6 text39 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1621 1CF2 text39 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1622 1CFA text39 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1626 1CFC text40 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1628 1CFC text40 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1630 1CFE text40 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1631 1D02 text40 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1628 1D08 text40 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1633 1D0E text40 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1628 1D10 text40 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":318 1D12 text31 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":324 1D12 text31 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":1633 1D12 text40 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":329 1D14 text31 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":331 1D18 text31 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":339 1D20 text31 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":340 1D24 text31 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":853 1D26 text35 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":862 1D2A text35 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":868 1D30 text35 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":871 1D34 text35 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":878 1D38 text35 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":702 1D3A text7 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":707 1D3A text7 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":710 1D3E text7 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":711 1D40 text7 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":712 1D42 text7 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":714 1D48 text7 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":712 1D4A text7 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":770 1D4C text8 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":776 1D4C text8 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":714 1D4C text7 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":787 1D58 text8 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":806 1D5A text10 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":810 1D5A text10 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":815 1D5C text10 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":817 1D5C text10 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":815 1D5E text10 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":825 1D66 text10 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":595 1D68 text30 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":648 1D68 text30 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":650 1D6C text30 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":651 1D6E text30 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":655 1D70 text30 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":657 1D74 text30 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":398 1D76 text32 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":403 1D76 text32 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":432 1D7A text32 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":433 1D7E text32 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device.c":435 1D82 text32 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":904 1D84 text18 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":906 1D84 text18 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":907 1D88 text18 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":144 1D8A text20 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":148 1D8A text20 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":139 1D8C text21 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/usb_device_hid.c":142 1D8C text21 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":712 1D8E text26 CODE
+"D:\Dropbox\MPLABx\pic18_non_j/src/main.c":715 1D8E text26 CODE
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__size_of_UserInit 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_USBDeviceTasks 119A 0 CODE 0 text6 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_ClearWatchdog 4 0 CODE 0 text41 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__CFG_XINST$OFF 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_USBStdFeatureReqHandler 1504 0 CODE 0 text17 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__H_FlashSignatureWord_const 2008 0 CODE 0 _FlashSignatureWord_const dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__L_FlashSignatureWord_const 2006 0 CODE 0 _FlashSignatureWord_const dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__p_FlashSignatureWord_const 2006 0 CODE 0 _FlashSignatureWord_const dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__S0 30000E 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__S1 140 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__S2 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_UIE F69 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_UIR F68 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+UnlockAndActivate@UnlockKey 4A 0 COMRAM 1 cstackCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Hintentry 0 0 ABS 0 intentry dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__CFG_PWRT$OFF 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Lintentry 0 0 ABS 0 intentry dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_ep0BoOdd 404 0 ABS 1 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__end_of_SignFlash F9A 0 CODE 0 text24 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_DeviceIsSoftDetached 32 0 COMRAM 1 bssCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_UEP0 F70 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_UEP1 F71 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__CFG_PLLDIV$5 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_UEP2 F72 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_UEP3 F73 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_UEP4 F74 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_UEP5 F75 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_UEP6 F76 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_UEP7 F77 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__size_of_BlinkUSBStatus 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_UCFG F6F 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_UEIE F6B 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_BlinkUSBStatus 1BE0 0 CODE 0 text42 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_UCON F6D 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+USBStdSetCfgHandler@i 28 0 COMRAM 1 bssCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__size_of_BootMain 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_pSrc 15 0 COMRAM 1 bssCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_main 1A82 0 CODE 0 text0 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__end_of_sd001 83B 0 SMALLCONST 0 smallconst dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_pDst 12 0 COMRAM 1 bssCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+___sp 0 0 STACK 2 stack C:\Windows\Temp\s290.obj
+_CFG01 83B 0 SMALLCONST 0 smallconst dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_sd000 8B9 0 SMALLCONST 0 smallconst dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_sd001 807 0 SMALLCONST 0 smallconst dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_sd002 864 0 SMALLCONST 0 smallconst dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+SignFlash@i 25 0 COMRAM 1 bssCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+start 0 0 CODE 0 init C:\Windows\Temp\s290.obj
+__size_of_HIDGetReportHandler 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__size_of_USBCBWakeFromSuspend 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__end_of_USBDisableWithLongDelay 1CFC 0 CODE 0 text39 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_LoadBDTandSetUOWN 1AE0 0 CODE 0 text38 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_ProgrammedPointer 1 0 COMRAM 1 bssCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__size_of_DelayRoutine 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_USBWakeFromSuspend 1D3A 0 CODE 0 text7 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Hirdata 0 0 CODE 0 irdata dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Lirdata 0 0 CODE 0 irdata dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__HRAM 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__size_of_USBWakeFromSuspend 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_EEADR FA9 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__LRAM 1 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_UADDR F6E 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_DelayRoutine 1CFC 0 CODE 0 text40 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_USTAT F6C 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__CFG_WDTPS$32768 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Hconfig 30000E 0 CONFIG 0 config dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Lconfig 300000 0 CONFIG 0 config dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__size_of_USBSoftAttach 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_ep0Bi 408 0 ABS 1 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_ep1Bi 410 0 ABS 1 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__end_of_BlinkUSBStatus 1C1A 0 CODE 0 text42 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_ep1Bo 40C 0 ABS 1 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__size_of_LoadBDTandSetUOWN 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__size_of_USBDeviceInit 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+HIDRxReport@len 4C 0 COMRAM 1 cstackCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+HIDTxReport@len 4C 0 COMRAM 1 cstackCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_BootMain 30 0 CODE 0 _BootMain_text dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Hbigram 0 0 ABS 0 bigram dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Lbigram 0 0 ABS 0 bigram dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Hrparam 0 0 ABS 0 rparam dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Lrparam 0 0 ABS 0 rparam dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Hram 0 0 ABS 0 ram dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Lram 0 0 ABS 0 ram dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Hcomram 0 0 ABS 0 comram dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Lcomram 0 0 ABS 0 comram dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__size_of_HIDSetReportHandler 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__end_of_USBCtrlTrfInHandler 1BE0 0 CODE 0 text22 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Hsfr 0 0 ABS 0 sfr dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Lsfr 0 0 ABS 0 sfr dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_UnlockAndActivate 1C48 0 CODE 0 text25 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_ProgrammingBuffer 100 0 BANK1 1 bssBANK1 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Hbss 0 0 RAM 1 bss dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__CFG_STVREN$ON 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Lbss 0 0 RAM 1 bss dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Hnvrram 0 0 COMRAM 1 nvrram dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Lnvrram 0 0 COMRAM 1 nvrram dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+WriteEEPROM@i 2B 0 COMRAM 1 bssCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_usb_active_cfg 48 0 COMRAM 1 bssCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__size_of_WriteEEPROM 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__size_of_LowVoltageCheck 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_USBCheckHIDRequest 10A2 0 CODE 0 text19 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_ADCON1 FC1 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_SetupPkt 3C 0 COMRAM 1 bssCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_EECON1 FA6 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_EECON2 FA7 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_UserInit 1CA2 0 CODE 0 text36 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_PIE2bits FA0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_PIR2bits FA1 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+USBCBInitEP@ConfigurationIndex 4B 0 COMRAM 1 cstackCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_usb_stat 3B 0 COMRAM 1 bssCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_LATDbits F8C 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_RCONbits FD0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_UCONbits F6D 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_EEDATA FA8 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Hintret 0 0 ABS 0 intret dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Lintret 0 0 ABS 0 intret dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Hramtop 800 0 RAM 0 ramtop dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Lramtop 800 0 RAM 0 ramtop dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Hstruct 0 0 COMRAM 1 struct dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__end_of_USBProtocolResetHandler 194C 0 CODE 0 text34 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Lstruct 0 0 COMRAM 1 struct dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_USTATSave 34 0 COMRAM 1 bssCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Hfarbss 0 0 FARRAM 0 farbss dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Lfarbss 0 0 FARRAM 0 farbss dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__end_of_ClearWatchdog 8 0 CODE 0 text41 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Hintcode 0 0 CODE 0 intcode dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Lintcode 0 0 CODE 0 intcode dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Hfardata 0 0 FARRAM 0 fardata dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Lfardata 0 0 FARRAM 0 fardata dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_OSCCON FD3 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_TABLAT FF5 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Habs1 0 0 ABS 0 abs1 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Labs1 0 0 ABS 0 abs1 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__size_of_USBCtrlTrfSetupHandler 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_INTCON FF2 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__size_of_ProcessIO 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__CFG_EBTR0$OFF 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__size_of_USBDisableWithLongDelay 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_STKPTR FFC 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_USBCBInitEP 1D26 0 CODE 0 text35 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_BootMain_absaddr 30 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__CFG_EBTR1$OFF 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__end_of_UserInit 1CC4 0 CODE 0 text36 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_USBCtrlTrfSetupHandler 1A1E 0 CODE 0 text11 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__CFG_PBADEN$OFF 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_USBSoftAttach 1C76 0 CODE 0 text33 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__end_of_sd002 88A 0 SMALLCONST 0 smallconst dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__end_of_USBStdGetDscHandler 1732 0 CODE 0 text16 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__end_of_WriteFlashBlock 10A2 0 CODE 0 text3 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_BootState 2F 0 COMRAM 1 bssCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_idle_rate 47 0 COMRAM 1 bssCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+USBDeviceTasks@i 27 0 COMRAM 1 bssCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_ep0BoEven 400 0 ABS 1 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_SignFlash E84 0 CODE 0 text24 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_LowVoltageCheck 1D8E 0 CODE 0 text26 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__end_of_USBCBWakeFromSuspend 1D5A 0 CODE 0 text8 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Hdata 0 0 ABS 0 data dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Ldata 0 0 ABS 0 data dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__size_of_UnlockAndActivate 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+stackhi 7FF 0 ABS 0 - C:\Windows\Temp\s290.obj
+__CFG_CPUDIV$OSC1_PLL2 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Htemp 0 0 COMRAM 1 temp dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Ltemp 0 0 COMRAM 1 temp dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+stacklo 4AC 0 ABS 0 - C:\Windows\Temp\s290.obj
+__Hrbit 0 0 COMRAM 1 rbit dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Lrbit 0 0 COMRAM 1 rbit dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__CFG_BOR$ON 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Hinit 0 0 CODE 0 init dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Linit 0 0 CODE 0 init dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Hintcodelo 0 0 CODE 0 intcodelo dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Lintcodelo 0 0 CODE 0 intcodelo dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Hrbss 0 0 COMRAM 1 rbss dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__end_of_main 1AE0 0 CODE 0 text0 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Lrbss 0 0 COMRAM 1 rbss dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_wCount 44 0 COMRAM 1 bssCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Htext 0 0 ABS 0 text dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Ltext 0 0 ABS 0 text dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__end_of_USBStdFeatureReqHandler 15C8 0 CODE 0 text17 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__end_of_WriteConfigBits 18D4 0 CODE 0 text5 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+end_of_initialization 1C3E 0 CODE 0 cinit dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__size_of_HIDInitEP 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_EP0OutOddBuf 41C 0 ABS 1 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_USBProtocolResetHandler 18D4 0 CODE 0 text34 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__end_of_LoadBDTandSetUOWN 1B3C 0 CODE 0 text38 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__size_of_USBStdGetStatusHandler 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_usb_alt_intf 49 0 COMRAM 1 bssCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__end_of_UnlockAndActivate 1C76 0 CODE 0 text25 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__end_of_FlashSignatureWord 2008 0 CODE 0 _FlashSignatureWord_const dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_TRISBbits F93 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_TRISDbits F95 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_PORTBbits F81 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_USTATbits F6C 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__end_of_LowVoltageCheck 1D90 0 CODE 0 text26 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_hid_rpt01 88A 0 SMALLCONST 0 smallconst dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_USBCtrlEPServiceComplete 1288 0 CODE 0 text12 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Hibigdata 0 0 CODE 0 ibigdata dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Libigdata 0 0 CODE 0 ibigdata dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_uint_delay_counter 22 0 COMRAM 1 bssCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__end_of_USBCtrlTrfSetupHandler 1A82 0 CODE 0 text11 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_WriteFlashBlock F9A 0 CODE 0 text3 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Hifardata 0 0 CODE 0 ifardata dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Lifardata 0 0 CODE 0 ifardata dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__end_of_DelayRoutine 1D12 0 CODE 0 text40 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Hbank0 0 0 ABS 0 bank0 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Lbank0 0 0 ABS 0 bank0 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Hbank1 0 0 ABS 0 bank1 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Lbank1 0 0 ABS 0 bank1 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_TBLPTRH FF7 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_PacketToPC A1 0 BANK0 1 bssBANK0 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Hbank2 0 0 ABS 0 bank2 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Lbank2 0 0 ABS 0 bank2 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Hbank3 0 0 ABS 0 bank3 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Lbank3 0 0 ABS 0 bank3 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Hbank4 0 0 ABS 0 bank4 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Lbank4 0 0 ABS 0 bank4 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Hbank5 0 0 ABS 0 bank5 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Lbank5 0 0 ABS 0 bank5 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_TBLPTRL FF6 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__size_of_USBDeviceTasks 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Hpowerup 0 0 CODE 0 powerup dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Lpowerup 0 0 CODE 0 powerup dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Hbank6 0 0 ABS 0 bank6 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Lbank6 0 0 ABS 0 bank6 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_USBStdSetCfgHandler 19B6 0 CODE 0 text14 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Hbank7 0 0 ABS 0 bank7 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Lbank7 0 0 ABS 0 bank7 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_device_dsc 8A7 0 SMALLCONST 0 smallconst dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_ctrl_trf_session_owner 36 0 COMRAM 1 bssCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Htext0 0 0 ABS 0 text0 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Ltext0 0 0 ABS 0 text0 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_TempBDT 5 0 COMRAM 1 bssCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__ptext0 1A82 0 CODE 0 text0 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Htext2 0 0 ABS 0 text2 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Ltext2 0 0 ABS 0 text2 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Htext3 0 0 ABS 0 text3 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Ltext3 0 0 ABS 0 text3 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__ptext2 8BE 0 CODE 0 text2 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Htext4 0 0 ABS 0 text4 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Ltext4 0 0 ABS 0 text4 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__ptext3 F9A 0 CODE 0 text3 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_BufferedDataIndex 30 0 COMRAM 1 bssCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+HIDRxReport@buffer 4A 0 COMRAM 1 cstackCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+HIDTxReport@buffer 4A 0 COMRAM 1 cstackCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Htext5 0 0 ABS 0 text5 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Ltext5 0 0 ABS 0 text5 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__ptext4 194C 0 CODE 0 text4 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_TBLPTRU FF8 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Htext6 0 0 ABS 0 text6 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__end_of_HIDGetReportHandler 1D8E 0 CODE 0 text21 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Ltext6 0 0 ABS 0 text6 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_short_pkt_status 39 0 COMRAM 1 bssCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__ptext5 1858 0 CODE 0 text5 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Htext7 0 0 ABS 0 text7 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Ltext7 0 0 ABS 0 text7 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__ptext6 119A 0 CODE 0 text6 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Htext8 0 0 ABS 0 text8 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Ltext8 0 0 ABS 0 text8 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__ptext7 1D3A 0 CODE 0 text7 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_USBDeviceInit 1D12 0 CODE 0 text31 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__pbssCOMRAM 1 0 COMRAM 1 bssCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__end_of_ResetDeviceCleanly 18 0 CODE 0 text27 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__H_BootMain_text 50 0 CODE 0 _BootMain_text dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__L_BootMain_text 30 0 CODE 0 _BootMain_text dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Htext9 0 0 ABS 0 text9 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Ltext9 0 0 ABS 0 text9 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__ptext8 1D4C 0 CODE 0 text8 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__p_BootMain_text 30 0 CODE 0 _BootMain_text dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__ptext9 1CC4 0 CODE 0 text9 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__end_of_HIDInitEP 1B90 0 CODE 0 text37 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Hclrtext 0 0 ABS 0 clrtext dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_USBSuspend 1CC4 0 CODE 0 text9 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Lclrtext 0 0 ABS 0 clrtext dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__size_of_USBStdFeatureReqHandler 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__end_of_HIDSetReportHandler 1D8C 0 CODE 0 text20 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__end_of_USBCtrlEPServiceComplete 1372 0 CODE 0 text12 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_usb_device_state 3A 0 COMRAM 1 bssCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__end_of_USBSuspend 1CE0 0 CODE 0 text9 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_EP0OutOddNeedsArmingNext 33 0 COMRAM 1 bssCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__end_of__initialization 1C3E 0 CODE 0 cinit dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__CFG_USBDIV$2 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_USBCtrlTrfInHandler 1B90 0 CODE 0 text22 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__end_of_USBStdSetCfgHandler 1A1E 0 CODE 0 text14 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_hid_rpt_rx_len 38 0 COMRAM 1 bssCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__end_of_USBStdGetStatusHandler 1504 0 CODE 0 text15 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_ErasePageTracker 20 0 COMRAM 1 bssCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__end_of_USBCBInitEP 1D3A 0 CODE 0 text35 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__end_of_USBWakeFromSuspend 1D4C 0 CODE 0 text7 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_USBCheckBusStatus 1D76 0 CODE 0 text32 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__end_of_WriteEEPROM 19B6 0 CODE 0 text4 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__size_of_HIDRxReport 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Hidata 0 0 CODE 0 idata dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Lidata 0 0 CODE 0 idata dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Hrdata 0 0 COMRAM 1 rdata dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Lrdata 0 0 COMRAM 1 rdata dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_hid_report_out 42C 0 ABS 1 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__end_of_USBCheckBusStatus 1D84 0 CODE 0 text32 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Hidloc 200008 0 IDLOC 0 idloc dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Lidloc 200000 0 IDLOC 0 idloc dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Hstack 0 0 STACK 2 stack dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Lstack 0 0 STACK 2 stack dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__end_of_device_dsc 8B9 0 SMALLCONST 0 smallconst dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Hparam 0 0 ABS 0 rparam dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Lparam 0 0 ABS 0 rparam dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__pcstackCOMRAM 4A 0 COMRAM 1 cstackCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_ResetDeviceCleanly C 0 CODE 0 text27 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+ProcessIO@pROM 9 0 COMRAM 1 bssCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Hsmallconst 8BE 0 SMALLCONST 0 smallconst dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Lsmallconst 800 0 SMALLCONST 0 smallconst dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__psmallconst 800 0 SMALLCONST 0 smallconst dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_bTRNIFCount 35 0 COMRAM 1 bssCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_USBCheckStdRequest 1372 0 CODE 0 text13 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_USB_SD_Ptr 801 0 SMALLCONST 0 smallconst dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Hnvbit 0 0 COMRAM 1 nvbit dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Lnvbit 0 0 COMRAM 1 nvbit dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Hcinit 0 0 ABS 0 cinit dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_Counter 1E 0 COMRAM 1 bssCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Lcinit 0 0 ABS 0 cinit dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_UIEbits F69 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_UIRbits F68 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__pcinit 1C1A 0 CODE 0 cinit dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__CFG_EBTRB$OFF 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__end_of_InitializeSystem 1D76 0 CODE 0 text30 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__size_of_InitializeSystem 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__ramtop 800 0 RAM 0 ramtop C:\Windows\Temp\s290.obj
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Windows\Temp\s290.obj
+__size_of_main 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__size_of_USBCBCheckOtherReq 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Hconst 0 0 CODE 0 const dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Lconst 0 0 CODE 0 const dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+LoadBDTandSetUOWN@BDTIndexToLoad 4B 0 COMRAM 1 cstackCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__size_of_SignFlash 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_FlashSignatureWord 2006 0 CODE 0 _FlashSignatureWord_const dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_CtrlTrfData 424 0 ABS 1 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_USBStdGetDscHandler 168A 0 CODE 0 text16 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__end_of_USBCtrlTrfTxService 168A 0 CODE 0 text23 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_ConfigsLockValue 31 0 COMRAM 1 bssCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__CFG_WRT0$OFF 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+HIDTxReport@i 4E 0 COMRAM 1 cstackCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__CFG_WRT1$OFF 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_WriteConfigBits 1858 0 CODE 0 text5 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_ctrl_trf_state 37 0 COMRAM 1 bssCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__HbssBANK0 0 0 ABS 0 bssBANK0 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__LbssBANK0 0 0 ABS 0 bssBANK0 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__pbssBANK0 60 0 BANK0 1 bssBANK0 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__size_of_USBCtrlTrfTxService 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__size_of_USBCBSuspend 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__CFG_FCMEN$OFF 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+USBDeviceTasks@pBDTEntry 1C 0 COMRAM 1 bssCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__HbssBANK1 0 0 ABS 0 bssBANK1 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__LbssBANK1 0 0 ABS 0 bssBANK1 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__size_of_USBCtrlTrfInHandler 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__pbssBANK1 100 0 BANK1 1 bssBANK1 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Htext10 0 0 ABS 0 text10 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Ltext10 0 0 ABS 0 text10 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Htext20 0 0 ABS 0 text20 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Ltext20 0 0 ABS 0 text20 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__ptext10 1D5A 0 CODE 0 text10 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Htext30 0 0 ABS 0 text30 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Htext11 0 0 ABS 0 text11 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Ltext30 0 0 ABS 0 text30 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Ltext11 0 0 ABS 0 text11 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__ptext20 1D8A 0 CODE 0 text20 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+USBSuspend@UIESave 29 0 COMRAM 1 bssCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Htext40 0 0 ABS 0 text40 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Htext21 0 0 ABS 0 text21 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Ltext40 0 0 ABS 0 text40 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Ltext21 0 0 ABS 0 text21 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__ptext11 1A1E 0 CODE 0 text11 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__ptext30 1D68 0 CODE 0 text30 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Htext31 0 0 ABS 0 text31 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Htext12 0 0 ABS 0 text12 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Ltext31 0 0 ABS 0 text31 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Ltext12 0 0 ABS 0 text12 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__ptext21 1D8C 0 CODE 0 text21 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__ptext40 1CFC 0 CODE 0 text40 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Htext41 0 0 ABS 0 text41 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Htext22 0 0 ABS 0 text22 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Ltext41 0 0 ABS 0 text41 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Ltext22 0 0 ABS 0 text22 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__ptext12 1288 0 CODE 0 text12 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__ptext31 1D12 0 CODE 0 text31 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Htext32 0 0 ABS 0 text32 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Htext13 0 0 ABS 0 text13 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Ltext32 0 0 ABS 0 text32 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Ltext13 0 0 ABS 0 text13 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__ptext22 1B90 0 CODE 0 text22 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__ptext41 4 0 CODE 0 text41 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Htext42 0 0 ABS 0 text42 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Htext23 0 0 ABS 0 text23 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Ltext42 0 0 ABS 0 text42 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Ltext23 0 0 ABS 0 text23 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__ptext13 1372 0 CODE 0 text13 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__ptext32 1D76 0 CODE 0 text32 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__size_of_USBCheckHIDRequest 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Htext33 0 0 ABS 0 text33 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Htext14 0 0 ABS 0 text14 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Ltext33 0 0 ABS 0 text33 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Ltext14 0 0 ABS 0 text14 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__ptext23 15C8 0 CODE 0 text23 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__ptext42 1BE0 0 CODE 0 text42 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_EECON1bits FA6 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__size_of_USBCBInitEP 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__end_of_ProcessIO E84 0 CODE 0 text2 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Htext24 0 0 ABS 0 text24 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Ltext24 0 0 ABS 0 text24 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__ptext14 19B6 0 CODE 0 text14 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__ptext33 1C76 0 CODE 0 text33 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Htext34 0 0 ABS 0 text34 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Htext15 0 0 ABS 0 text15 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Ltext34 0 0 ABS 0 text34 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Ltext15 0 0 ABS 0 text15 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__ptext24 E84 0 CODE 0 text24 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Htext25 0 0 ABS 0 text25 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Ltext25 0 0 ABS 0 text25 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__ptext15 1440 0 CODE 0 text15 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__ptext34 18D4 0 CODE 0 text34 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+___inthi_sp 0 0 STACK 2 stack C:\Windows\Temp\s290.obj
+__Htext35 0 0 ABS 0 text35 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Htext16 0 0 ABS 0 text16 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Ltext35 0 0 ABS 0 text35 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Ltext16 0 0 ABS 0 text16 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__ptext25 1C48 0 CODE 0 text25 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Htext26 0 0 ABS 0 text26 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Ltext26 0 0 ABS 0 text26 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__ptext16 168A 0 CODE 0 text16 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__ptext35 1D26 0 CODE 0 text35 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Htext36 0 0 ABS 0 text36 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Htext17 0 0 ABS 0 text17 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Ltext36 0 0 ABS 0 text36 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Ltext17 0 0 ABS 0 text17 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__ptext26 1D8E 0 CODE 0 text26 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__size_of_USBCheckStdRequest 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Htext27 0 0 ABS 0 text27 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Ltext27 0 0 ABS 0 text27 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__ptext17 1504 0 CODE 0 text17 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__ptext36 1CA2 0 CODE 0 text36 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+WriteFlashBlock@i 2E 0 COMRAM 1 bssCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Htext37 0 0 ABS 0 text37 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Htext18 0 0 ABS 0 text18 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Ltext37 0 0 ABS 0 text37 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Ltext18 0 0 ABS 0 text18 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__ptext27 C 0 CODE 0 text27 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Htext28 0 0 ABS 0 text28 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Ltext28 0 0 ABS 0 text28 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__ptext18 1D84 0 CODE 0 text18 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__ptext37 1B3C 0 CODE 0 text37 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_WriteEEPROM 194C 0 CODE 0 text4 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Htext38 0 0 ABS 0 text38 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Htext19 0 0 ABS 0 text19 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Ltext38 0 0 ABS 0 text38 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Ltext19 0 0 ABS 0 text19 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__ptext28 17CE 0 CODE 0 text28 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Htext29 0 0 ABS 0 text29 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Ltext29 0 0 ABS 0 text29 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__ptext19 10A2 0 CODE 0 text19 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__ptext38 1AE0 0 CODE 0 text38 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__CFG_BORV$3 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+___intlo_sp 0 0 STACK 2 stack C:\Windows\Temp\s290.obj
+__Htext39 0 0 ABS 0 text39 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Ltext39 0 0 ABS 0 text39 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__ptext29 1732 0 CODE 0 text29 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_HIDRxReport 1732 0 CODE 0 text29 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_HIDTxReport 17CE 0 CODE 0 text28 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__ptext39 1CE0 0 CODE 0 text39 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__end_of_HIDRxReport 17CE 0 CODE 0 text29 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_INTCONbits FF2 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_InitializeSystem 1D68 0 CODE 0 text30 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__size_of_USBCtrlEPServiceComplete 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Hend_init 4 0 CODE 0 end_init dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Lend_init 0 0 CODE 0 end_init dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+WriteFlashBlock@pROM F 0 COMRAM 1 bssCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__end_of_BootMain 50 0 CODE 0 _BootMain_text dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_USBDisableWithLongDelay 1CE0 0 CODE 0 text39 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_FlashSignatureWord_absconstaddr 2006 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__HHiVector 0 0 ABS 0 HiVector dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__LHiVector 0 0 ABS 0 HiVector dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+SignFlash@pROM C 0 COMRAM 1 bssCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__HLoVector 0 0 ABS 0 LoVector dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__CFG_CP0$OFF 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__LLoVector 0 0 ABS 0 LoVector dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__smallconst 800 0 SMALLCONST 0 smallconst C:\Windows\Temp\s290.obj
+__end_of_USBDeviceInit 1D26 0 CODE 0 text31 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__CFG_FOSC$HSPLL_HS 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__CFG_CP1$OFF 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Hreset_vec 0 0 CODE 0 reset_vec dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Lreset_vec 0 0 CODE 0 reset_vec dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_active_protocol 46 0 COMRAM 1 bssCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_HIDInitEP 1B3C 0 CODE 0 text37 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__size_of_USBStdSetCfgHandler 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__size_of_USBStdGetDscHandler 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__end_of_USB_SD_Ptr 807 0 SMALLCONST 0 smallconst dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_USBCBCheckOtherReq 1D84 0 CODE 0 text18 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__accesstop 60 0 ABS 0 - C:\Windows\Temp\s290.obj
+__Hintcode_body 0 0 ABS 0 intcode_body dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__Lintcode_body 0 0 ABS 0 intcode_body dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__end_of_USBCBSuspend 1D68 0 CODE 0 text10 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_PacketFromPC 60 0 BANK0 1 bssBANK0 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+intlevel0 0 0 CODE 0 text C:\Windows\Temp\s290.obj
+LoadBDTandSetUOWN@pBDTEntry 1A 0 COMRAM 1 bssCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+intlevel1 0 0 CODE 0 text C:\Windows\Temp\s290.obj
+WriteFlashBlock@CorrectionFactor 2D 0 COMRAM 1 bssCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_USBCBSuspend 1D5A 0 CODE 0 text10 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__CFG_WRTB$OFF 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_ProcessIO 8BE 0 CODE 0 text2 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+intlevel2 0 0 CODE 0 text C:\Windows\Temp\s290.obj
+__end_of_USBCBCheckOtherReq 1D8A 0 CODE 0 text18 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+intlevel3 0 0 CODE 0 text C:\Windows\Temp\s290.obj
+_USBCtrlTrfTxService 15C8 0 CODE 0 text23 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__CFG_WRTC$OFF 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__end_of_hid_rpt01 8A7 0 SMALLCONST 0 smallconst dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__end_of_USBSoftAttach 1CA2 0 CODE 0 text33 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+WriteConfigBits@i 2A 0 COMRAM 1 bssCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+ProcessIO@i 24 0 COMRAM 1 bssCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__size_of_USBSuspend 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__CFG_CPB$OFF 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__size_of_HIDTxReport 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__size_of_USBCheckBusStatus 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+start_initialization 1C1A 0 CODE 0 cinit dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__end_of_CFG01 864 0 SMALLCONST 0 smallconst dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__end_of_sd000 8BD 0 SMALLCONST 0 smallconst dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+DelayRoutine@DelayAmount 4A 0 COMRAM 1 cstackCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__size_of_WriteFlashBlock 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__size_of_WriteConfigBits 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__CFG_IESO$OFF 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__end_of_HIDTxReport 1858 0 CODE 0 text28 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__CFG_MCLRE$ON 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_hid_report_in 46C 0 ABS 1 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__size_of_USBProtocolResetHandler 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__CFG_VREGEN$ON 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+WriteFlashBlock@BytesTakenFromBuffer 2C 0 COMRAM 1 bssCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+USBCtrlTrfTxService@bytes_to_send 26 0 COMRAM 1 bssCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__size_of_ClearWatchdog 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_USBCBWakeFromSuspend 1D4C 0 CODE 0 text8 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__end_of_USBDeviceTasks 1288 0 CODE 0 text6 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+BlinkUSBStatus@led_count 18 0 COMRAM 1 bssCOMRAM dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__size_of_ResetDeviceCleanly 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__initialization 1C1A 0 CODE 0 cinit dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__end_of_USBCheckHIDRequest 119A 0 CODE 0 text19 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__CFG_LPT1OSC$OFF 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_USBStdGetStatusHandler 1440 0 CODE 0 text15 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_HIDGetReportHandler 1D8C 0 CODE 0 text21 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__activetblptr 2 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_HIDSetReportHandler 1D8A 0 CODE 0 text20 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__end_of_USBCheckStdRequest 1440 0 CODE 0 text13 dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__CFG_WDT$OFF 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+__CFG_LVP$OFF 0 0 ABS 0 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+_EP0OutEvenBuf 414 0 ABS 1 - dist/PIC18F4550_XC8/production\MPLAB.X.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect in on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+_ep0Bi 1 408 4
+_ep1Bi 1 410 4
+_EP0OutEvenBuf 1 414 8
+_ep0BoOdd 1 404 4
+_ep1Bo 1 40C 4
+_ep0BoEven 1 400 4
+_hid_report_in 1 46C 40
+_hid_report_out 1 42C 40
+_CtrlTrfData 1 424 8
+_EP0OutOddBuf 1 41C 8
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+_BootMain_text 0 30 30 20 1
+_FlashSignatureWord_const 0 2006 2006 2 1
+reset_vec 0 0 0 8 1
+smallconst 0 800 800 BE 1
+config 0 300000 300000 E 1
+idloc 0 200000 200000 8 1
+bssCOMRAM 1 1 1 58 1
+bssBANK0 1 60 60 82 1
+bssBANK1 1 100 100 40 1
+text2 0 8BE 8BE 14D2 1
+text27 0 C C C 1

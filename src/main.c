@@ -365,7 +365,7 @@ void BootMain(void);
 void LowVoltageCheck(void);
 void InitializeSystem(void);
 void BlinkUSBStatus(void);
-
+/*XC8 y la puta que te pario*/
 
 
 //Special "flash signature" located in the application program memory space (not
